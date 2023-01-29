@@ -1,0 +1,10 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+// подключения компонентов
+@import "./components/header";
+@import "./components/hero";
+@import "./components/article";
+@import "./components/footer";

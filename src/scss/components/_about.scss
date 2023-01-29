@@ -1,0 +1,107 @@
+.about {
+  padding: 30px 0 71px;
+  background-color: var(--black-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+    color: var( --white-color);
+  }
+
+  &__descr {
+    grid-column: 1 / 2;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text-gray-color);
+  }
+
+  // &__block-img-bg {
+  //   min-height: 250px;
+  //   background: url(../img/about-img-1920.webp), url(../img/about-img-1920.jpg);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   grid-column: 2 / 3;
+  //   grid-row: 2 / 3;
+  // }
+
+  &__form {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: url(../img/about-img-1920.webp), url(../img/about-img-1920.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+}
+
+
+.form-mailing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label  {
+    width: 76%;
+  }
+
+  &__input {
+    padding: 15px 23px;
+    max-width: 474px;
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--form-gray-dark-bgcolor);
+    transition: 0.3s ease-in-out;
+
+    &::placeholder {
+      color: var(--text-gray-color);
+      transition: 0.3s ease-in-out;
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--orange-color);
+    }
+
+    &:hover::placeholder {
+      color: var(--orange-color);
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    padding: 0 22px;
+    transition: 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: 3px solid var(--orange-dark-color);
+    }
+
+    &:hover {
+      background-color: var(--orange-medium-color);
+    }
+
+    &:active {
+      background-color: var(--orange-dark-color);
+    }
+  }
+}

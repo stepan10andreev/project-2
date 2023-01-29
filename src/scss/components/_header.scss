@@ -1,0 +1,136 @@
+.header {
+  padding: 22px 0;
+  background-color: var(--black-color);
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    margin-right: 139px;
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__block-search {
+    position: relative;
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 81px;
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white-color);
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+
+
+  &::after {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 100%;
+      left: -10%;
+      top: 0;
+      transition: 0.3s ease-in-out;
+    }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    background-color: var(--orange-medium-color);
+    z-index: -100;
+  }
+
+  &:hover {
+    color: var(--orange-color);
+  }
+
+  &:active  {
+    color: var(--orange-dark-color);
+  }
+
+}
+
+
+.logo-link {
+  &:focus-visible {
+    outline-offset: 5px;
+    outline: 3px solid var(--orange-color);
+  }
+}
+
+
+
+
+.search-form {
+  position: absolute;
+  right: 110%;
+  top: 0%;
+  visibility: hidden;
+  opacity: 0;
+  // display: none;
+  transition: 0.3s ease-in-out;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+    // display: block;
+  }
+
+  &__input {
+    max-width: 170px;
+    border-bottom: 1px solid var(--input-gray-bgcolor);
+    color: var(--input-gray-bgcolor);
+    background: transparent;
+    transition: 0.3s ease-in-out;
+
+    &::placeholder {
+      font-family: "TTFirsNeue";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--input-gray-bgcolor);
+    }
+
+    &:focus-visible,
+    &:hover  {
+      outline: none;
+      border-bottom-color: var(--orange-color);
+    }
+
+    &:active {
+      border-bottom-color: var(--orange-dark-color);
+    }
+
+    &:active::placeholder {
+      visibility: hidden;
+    }
+  }
+}
+
+
+
+
+.btn-search {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon-search.svg);
+
+}
+
+

@@ -32,6 +32,7 @@ img {
   margin: 0;
   min-width: 320px;
   font-weight: 400;
+  color: var(--text-black-color);
   // overflow: hidden;
 }
 
@@ -86,13 +87,22 @@ img {
   border-radius: 40px;
 }
 
+.btn-type-1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
 
-// .title {
-//   font-family: "TTFirsNeue";
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: 31px;
-// }
+.offset {
+  padding: 94px 0;
+}
+
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+}
 
 // .desc {
 //   font-weight: 400;

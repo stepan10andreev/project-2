@@ -1,43 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Радио W-Wawe</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MullerRegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MullerLightItalic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
 </head>
-<body>
-    <!-- @include('partials/header.html') -->
-    <header class="header">
-   
-        <h1 class="title">
-            Заголовк 1
-        </h1>
-
-        <svg>
-            <use xlink:href="img/sprite.svg#dropbox"></use>
-           </svg>    
-    </header>
-    <main>
-        <section class="hero">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur veniam voluptas eveniet eius nulla voluptate repellat itaque accusantium excepturi quibusdam dolores, eos fuga amet saepe doloribus placeat sit qui corporis!
-        </section>
-        <section class="section-article">
-            <article class="article">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio praesentium corrupti aliquid at sapiente quae nesciunt veniam voluptatibus id ipsam minus deserunt, voluptate deleniti, asperiores suscipit. Aperiam error assumenda quo?
-            </article>
-        </section>
-        
+<body class="page__body">
+    @include('partials/header.html')
+    <main class="main">
+    @include('partials/hero.html')
+    @include('partials/podcasts.html')
+    @include('partials/broadcasts.html')
+    @include('partials/quests.html')
+    @include('partials/playlists.html')
+    @include('partials/promotion.html')
+    @include('partials/about.html')
     </main>
-    <!-- @include('partials/footer.html') -->
+    @include('partials/footer.html')
     <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>

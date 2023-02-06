@@ -1,136 +1,133 @@
 .header {
-  padding: 22px 0;
-  background-color: var(--black-color);
+  background-color: var(--white-color);
 
+  &__top {
+    padding: 20px 0;
+  }
+
+  &__bottom {
+    border: 1px solid var(--gray-ui-color);
+  }
 
   &__container {
     display: flex;
     align-items: center;
-  }
-
-  &__logo-link {
-    margin-right: 139px;
+    justify-content: space-between;
   }
 
   &__nav {
-    margin-right: auto;
+    .nav__list {
+      display: flex;
+      gap: 57px;
+    }
   }
 
-  &__block-search {
-    position: relative;
+  &__wrapper-button {
+    display: flex;
+    align-items: center;
+    gap: 24px;
   }
 }
 
-.nav__list {
-  display: flex;
-  gap: 81px;
+.nav {
+  &__link {
+    font-family: 'Muller';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var( --text-black-color);
+  }
 }
 
-.nav__link {
-  position: relative;
-  font-weight: 400;
+.button-search {
+  &__svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.button-enter {
+  padding: 12px 32px;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 21px;
-  color: var(--white-color);
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-
-
-  &::after {
-      content: "";
-      position: absolute;
-      width: 120%;
-      height: 100%;
-      left: -10%;
-      top: 0;
-      transition: 0.3s ease-in-out;
-    }
-
-  &:focus-visible {
-    outline: none;
-  }
-
-  &:focus-visible::after {
-    background-color: var(--orange-medium-color);
-    z-index: -100;
-  }
-
-  &:hover {
-    color: var(--orange-color);
-  }
-
-  &:active  {
-    color: var(--orange-dark-color);
-  }
-
+  line-height: 16px;
+  border: 2px solid #121723;
+  border-radius: 77px;
 }
 
+.header-bottom {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+  }
 
-.logo-link {
-  &:focus-visible {
-    outline-offset: 5px;
-    outline: 3px solid var(--orange-color);
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var( --text-black-color);
+  }
+
+  &__svg {
+    width: 46px;
+    height: 60px;
   }
 }
 
+.list-live {
+    display: flex;
+    align-items: center;
 
 
-
-.search-form {
-  position: absolute;
-  right: 110%;
-  top: 0%;
-  visibility: hidden;
-  opacity: 0;
-  // display: none;
-  transition: 0.3s ease-in-out;
-
-  &--active {
-    visibility: visible;
-    opacity: 1;
-    // display: block;
+  &__item {
+    padding-left: 12px;
+    padding-right: 42px;
+    display: flex;
+    align-items: center;
   }
 
-  &__input {
-    max-width: 170px;
-    border-bottom: 1px solid var(--input-gray-bgcolor);
-    color: var(--input-gray-bgcolor);
-    background: transparent;
-    transition: 0.3s ease-in-out;
+  &__item:first-child {
+    border-left: 1px solid var(--gray-ui-color);
+    border-right: 1px solid var(--gray-ui-color);
+  }
 
-    &::placeholder {
-      font-family: "TTFirsNeue";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      color: var(--input-gray-bgcolor);
-    }
+  &__item:last-child {
+    border-right: 1px solid var(--gray-ui-color);
+  }
 
-    &:focus-visible,
-    &:hover  {
-      outline: none;
-      border-bottom-color: var(--orange-color);
-    }
+  &__button {
+    margin-right: 10px;
+  }
 
-    &:active {
-      border-bottom-color: var(--orange-dark-color);
-    }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &:active::placeholder {
-      visibility: hidden;
-    }
+  &__heading {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--text-gray-color);
+  }
+
+  &__song-name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var( --text-black-color);
   }
 }
 
-
-
-
-.btn-search {
-  width: 25px;
-  height: 25px;
-  background: url(../img/icon-search.svg);
-
+.btn-play {
+  &__svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 

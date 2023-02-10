@@ -1,0 +1,123 @@
+.guests {
+  background-color: var(--text-black-color);
+  color: var(--white-color);
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-gray-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--text-gray-color);
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    // display: grid;
+    // grid-template-columns: minmax(1fr, 2fr) minmax(255px, 1fr);
+    // // grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+    // gap: 30px;
+  }
+}
+
+
+
+.accordion-btn {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 0.5px solid var(--violet-light-color);
+  border-bottom: 0.5px solid var(--violet-light-color);
+  &__name {
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white-color);
+  }
+  &__svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.accordion-list {
+  border-top: 0.5px solid var(--violet-light-color);
+  border-bottom: 0.5px solid var(--violet-light-color);
+}
+
+.accordion {
+  &__content {
+    padding: 20px 0 4px;
+  }
+
+  &__content-list {
+    columns: auto 4;
+  }
+
+  &__content-item {
+    margin-bottom: 16px;
+  }
+
+  &__content-btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--white-color);
+  }
+}
+
+
+
+.guest-article {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  &__img {
+    display: flex;
+  }
+  &__name {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  &__descr {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--text-gray-color);
+  }
+  &__social-link {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    gap: 30px;
+  }
+  &__social-link > svg {
+    width: 24px;
+    height: 24px
+  }
+  &__live-link {
+    padding: 12px 20px;
+    max-width: fit-content;
+  }
+}

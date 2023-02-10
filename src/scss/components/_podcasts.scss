@@ -12,8 +12,9 @@
     // justify-items: center;
   }
 
-  &__buttom-more {
+  &__button-more {
     margin: 0 auto;
+    display: block;
     color: var(--violet-medium-color);
     background-color: transparent;
     border: 2px solid var(--violet-medium-color);

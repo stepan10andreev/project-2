@@ -88,9 +88,24 @@ img {
 }
 
 .btn-type-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+}
+
+.btn-type-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--violet-light-color);
+  border: 2px solid #AA9DFA;
+  border-radius: 77px;
 }
 
 .offset {

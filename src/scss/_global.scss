@@ -94,6 +94,8 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  background: var( --violet-medium-color);
+  border-radius: 40px;
 }
 
 .btn-type-2 {
@@ -119,6 +121,14 @@ img {
   line-height: 100%;
 }
 
+.input-general {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  border: 1px solid var(--white-color);
+  border-radius: 30px;
+  background-color: transparent;
+}
 // .desc {
 //   font-weight: 400;
 //   font-size: 16px;

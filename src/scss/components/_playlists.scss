@@ -1,0 +1,96 @@
+.playlists {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  &__form {
+    padding-bottom: 27px;
+  }
+  &__note-block {
+    padding-top: 38px;
+    border-top: 1px solid var(--gray-color);
+  }
+  &__note-logo,
+  &__note-descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-gray-color);
+  }
+
+  &__note-svg {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-row-gap: 30px;
+  }
+}
+
+.playlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  &__heading {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--text-gray-color);
+  }
+  &__input-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--text-black-color);
+  }
+}
+
+.playlist-article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  &__wrapper {
+    padding: 16px;
+    border: 1px solid var(--gray-ui-color);
+    background-color: var(--white-color);
+  }
+  &__img {
+    display: flex;
+  }
+  &__name {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--text-black-color);
+  }
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--text-gray-color);
+  }
+  &__flag-svg {
+    width: 24px;
+    height: 20px;
+  }
+  &__country-flag {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

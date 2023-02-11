@@ -1,0 +1,72 @@
+.promotion {
+  background-color: var(--bg-color);
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  &__img-block {
+    position: relative;
+    max-width: 640px;
+  }
+  &__content-block {
+    max-width: 445px;
+  }
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--gold-light-color);
+  }
+  &__descr {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--white-color);
+  }
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+  }
+  &__wave-svg {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    display: block;
+    max-width: 445px;
+    height: 10px;
+  }
+  &__price {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--white-color);
+  }
+  &__content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.buy-link {
+  padding: 25px 13px;
+  max-width: fit-content;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--gold-light-color);
+  border: 2px solid var(--gold-light-color);
+  &__svg {
+    width: 20px;
+    height: 20px;
+  }
+}
